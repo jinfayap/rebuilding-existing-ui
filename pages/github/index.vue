@@ -1,7 +1,9 @@
 <template>
   <div class="text-sm text-gray-900">
-    <nav class="bg-gray-900 flex items-center justify-between px-10 py-4">
-      <div class="flex items-center space-x-3">
+    <nav
+      class="bg-gray-900 flex flex-col lg:flex-row items-center justify-between px-10 py-4"
+    >
+      <div class="flex flex-col lg:flex-row items-center space-x-3 w-full">
         <a href="#">
           <svg
             viewBox="0 0 16 16"
@@ -14,10 +16,10 @@
           </svg>
         </a>
 
-        <div class="relative">
+        <div class="relative mt-3 lg:mt-0 w-full lg:max-w-min">
           <input
             type="text"
-            class="border border-gray-600 rounded bg-gray-900 placeholder-gray-300 px-2 py-1 w-72 text-white"
+            class="border border-gray-600 rounded bg-gray-900 placeholder-gray-300 px-2 py-1 w-full lg:w-72 text-white"
             placeholder="Search or jump to..."
           />
 
@@ -28,7 +30,9 @@
           </div>
         </div>
 
-        <ul class="text-white flex items-center space-x-2">
+        <ul
+          class="text-white flex flex-col lg:flex-row items-center my-3 lg:my-0 space-y-2 lg:space-y-0 space-x-0 lg:space-x-2"
+        >
           <li>
             <a href="#" class="hover:text-gray-300 font-semibold"
               >Pull requests</a
@@ -132,7 +136,9 @@
       </div>
     </nav>
 
-    <section class="flex items-center justify-between px-10 py-3 bg-gray-100">
+    <section
+      class="flex flex-col lg:flex-row items-center justify-between px-10 py-3 bg-gray-100"
+    >
       <div class="flex items-center space-x-2">
         <svg viewBox="0 0 16 16" class="mr-2 w-4 h-4 fill-current">
           <path
@@ -157,9 +163,9 @@
         >
       </div>
 
-      <div class="flex items-center space-x-3">
-        <div
-          class="flex items-center border border-gray-300 px-2 py-1 rounded cursor-pointer"
+      <div class="flex items-center space-x-3 mt-3 lg:mt-0">
+        <button
+          class="flex items-center border border-gray-300 px-2 py-1 rounded hover:bg-gray-200"
         >
           <svg
             fill="currentColor"
@@ -173,10 +179,10 @@
           </svg>
 
           <span class="font-semibold text-xs">Pin</span>
-        </div>
+        </button>
 
-        <div
-          class="flex items-center border border-gray-300 px-2 py-1 rounded cursor-pointer space-x-2"
+        <button
+          class="flex items-center border border-gray-300 px-2 py-1 rounded hover:bg-gray-200 space-x-2"
         >
           <svg
             class="w-4 h-4"
@@ -218,10 +224,10 @@
               d="M19 9l-7 7-7-7"
             />
           </svg>
-        </div>
+        </button>
 
-        <div
-          class="flex items-center border border-gray-300 px-2 py-1 rounded cursor-pointer space-x-2"
+        <button
+          class="flex items-center border border-gray-300 px-2 py-1 rounded hover:bg-gray-200 space-x-2"
         >
           <svg fill="currentColor" viewBox="0 0 16 16" class="w-4 h-4">
             <path
@@ -237,11 +243,11 @@
           >
             0
           </div>
-        </div>
+        </button>
 
-        <div class="flex items-center">
+        <button class="flex items-center">
           <div
-            class="flex items-center border border-gray-300 px-2 py-1 rounded-l cursor-pointer space-x-2"
+            class="flex items-center border border-gray-300 px-2 py-1 rounded-l hover:bg-gray-200 space-x-2"
           >
             <svg
               fill="none"
@@ -264,8 +270,8 @@
             </div>
           </div>
 
-          <div
-            class="border border-gray-300 border-l-0 rounded-r px-2 py-1 cursor-pointer"
+          <button
+            class="border border-gray-300 border-l-0 rounded-r px-2 py-1 hover:bg-gray-200"
           >
             <svg
               class="h-4 w-4"
@@ -280,8 +286,8 @@
                 d="M19 9l-7 7-7-7"
               />
             </svg>
-          </div>
-        </div>
+          </button>
+        </button>
       </div>
     </section>
 
@@ -377,7 +383,7 @@
           >
         </li>
 
-        <li>
+        <li class="hidden lg:block">
           <a
             href="#"
             class="flex items-center pb-3 border-b-2 hover:border-gray-300"
@@ -392,7 +398,7 @@
           >
         </li>
 
-        <li>
+        <li class="hidden lg:block">
           <a
             href="#"
             class="flex items-center pb-3 border-b-2 hover:border-gray-300"
@@ -407,7 +413,7 @@
           >
         </li>
 
-        <li>
+        <li class="hidden lg:block">
           <a
             href="#"
             class="flex items-center pb-3 border-b-2 hover:border-gray-300"
@@ -425,12 +431,12 @@
     </section>
 
     <section>
-      <div class="container max-w-7xl flex mx-auto mt-6">
-        <div class="w-3/4 px-4 flex flex-col">
+      <div class="container max-w-7xl flex flex-col lg:flex-row mx-auto mt-6">
+        <div class="lg:w-3/4 px-4 flex flex-col">
           <div class="branch-items flex items-center justify-between">
             <div class="flex space-x-2">
-              <div
-                class="flex items-center border border-gray-300 bg-gray-100 px-2 py-1 rounded cursor-pointer space-x-1"
+              <button
+                class="flex items-center border border-gray-300 bg-gray-100 hover:bg-gray-200 px-2 py-1 rounded cursor-pointer space-x-1"
               >
                 <svg viewBox="0 0 16 16" class="w-4 h-4 fill-current">
                   <path
@@ -454,7 +460,7 @@
                     d="M19 9l-7 7-7-7"
                   />
                 </svg>
-              </div>
+              </button>
 
               <div
                 class="flex items-center px-2 py-1 rounded cursor-pointer space-x-1 hover:text-blue-500"
@@ -486,14 +492,14 @@
             </div>
 
             <div class="flex items-center space-x-2">
-              <div
-                class="flex items-center border border-gray-300 bg-gray-100 px-2 py-1 rounded cursor-pointer"
+              <button
+                class="flex items-center border border-gray-300 bg-gray-100 hover:bg-gray-200 px-2 py-1 rounded"
               >
                 <span class="font-semibold text-xs">Go to file</span>
-              </div>
+              </button>
 
-              <div
-                class="flex items-center border border-gray-300 bg-gray-100 px-2 py-1 rounded cursor-pointer space-x-1"
+              <button
+                class="flex items-center border border-gray-300 bg-gray-100 hover:bg-gray-200 px-2 py-1 rounded space-x-1"
               >
                 <span class="font-semibold text-xs">Add file</span>
 
@@ -510,10 +516,10 @@
                     d="M19 9l-7 7-7-7"
                   />
                 </svg>
-              </div>
+              </button>
 
-              <div
-                class="flex items-center bg-green-400 hover:bg-green-500 px-2 py-1 rounded cursor-pointer space-x-1"
+              <button
+                class="flex items-center bg-green-400 hover:bg-green-500 px-2 py-1 rounded space-x-1"
               >
                 <span class="font-semibold text-xs text-white">Code</span>
 
@@ -530,7 +536,7 @@
                     d="M19 9l-7 7-7-7"
                   />
                 </svg>
-              </div>
+              </button>
             </div>
           </div>
 
@@ -1189,7 +1195,7 @@
           </div>
         </div>
 
-        <div class="side-bar w-1/4">
+        <div class="side-bar lg:w-1/4 px-4 lg:px-0 mt-3 lg:mt-0">
           <div class="flex flex-col space-y-3">
             <div class="flex items-center justify-between pr-1">
               <span class="font-semibold">About</span>
@@ -1333,8 +1339,10 @@
 
     <hr class="my-4 max-w-7xl mx-auto px-4" />
 
-    <footer class="max-w-7xl mx-auto px-4 flex items-center py-6">
-      <div class="flex space-x-2">
+    <footer
+      class="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center py-6"
+    >
+      <div class="flex space-x-2 order-2 lg:order-1">
         <a href="#">
           <svg
             viewBox="0 0 16 16"
@@ -1349,7 +1357,9 @@
 
         <span class="text-xs text-gray-400">&copy; 2020 Github, Inc.</span>
       </div>
-      <div class="ml-12 space-x-8">
+      <div
+        class="ml-0 lg:ml-12 mb-2 lg:mb-0 space-x-6 lg:space-x-8 order-1 lg:order-2 text-xs lg:text-sm"
+      >
         <a href="#" class="text-blue-500 hover:underline">Terms</a>
         <a href="#" class="text-blue-500 hover:underline">Privacy</a>
         <a href="#" class="text-blue-500 hover:underline">Security</a>
