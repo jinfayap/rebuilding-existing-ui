@@ -903,11 +903,13 @@
           Sign up to get unlimited songs and podcasts with occasional ads. No
           credit card needed
         </p>
-        <button
-          class="w-2/5 font-semibold rounded-full bg-white px-6 py-2 text-blue-500 uppercase hover:scale-105 mr-8"
-        >
-          Sign Up Free
-        </button>
+        <div class="w-2/5 text-right">
+          <button
+            class="w-52 font-semibold rounded-full bg-white px-6 py-2 text-blue-500 uppercase hover:scale-105 mr-8"
+          >
+            Sign Up Free
+          </button>
+        </div>
       </div>
     </footer>
   </div>
