@@ -1,6 +1,6 @@
 <template>
-  <div class="flex h-screen overflow-hidden bg-white">
-    <div class="bg-black flex flex-col w-52 text-white mb-20">
+  <div class="flex h-screen overflow-hidden bg-white relative">
+    <div class="flex bg-black flex-col w-32 md:w-52 text-white mb-20">
       <nav class="px-6 text-sm flex flex-col h-full">
         <svg viewBox="0 0 1134 340" class="-mt-4 w-32 h-32 text-white">
           <title>Spotify</title>
@@ -131,7 +131,7 @@
             </button>
           </div>
 
-          <div class="space-x-4">
+          <div class="md:space-x-4">
             <a
               href="#"
               class="uppercase font-bold tracking-wide hover:scale-105 inline-block"
@@ -140,7 +140,7 @@
 
             <a
               href="#"
-              class="uppercase font-semibold tracking-wide bg-white px-6 py-2 text-black rounded-full inline-block hover:scale-105"
+              class="uppercase font-semibold tracking-wide bg-white px-2 py-1 md:px-6 md:py-2 text-black rounded-full inline-block hover:scale-105"
               >Log in</a
             >
           </div>
@@ -163,7 +163,7 @@
             </div>
 
             <div
-              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6"
+              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-6"
             >
               <article
                 class="rounded-md bg-gray-600 hover:bg-gray-500 px-4 py-4"
@@ -267,7 +267,7 @@
             </div>
 
             <div
-              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6"
+              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-6"
             >
               <article
                 class="rounded-md bg-gray-600 hover:bg-gray-500 px-4 py-4"
@@ -338,7 +338,7 @@
             </div>
 
             <div
-              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6"
+              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-6"
             >
               <article
                 class="rounded-md bg-gray-600 hover:bg-gray-500 px-4 py-4"
@@ -453,7 +453,7 @@
             </div>
 
             <div
-              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6"
+              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-6"
             >
               <article
                 class="rounded-md bg-gray-600 hover:bg-gray-500 px-4 py-4"
@@ -562,7 +562,7 @@
             </div>
 
             <div
-              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6"
+              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-6"
             >
               <article
                 class="rounded-md bg-gray-600 hover:bg-gray-500 px-4 py-4"
@@ -678,7 +678,7 @@
             </div>
 
             <div
-              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6"
+              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-6"
             >
               <article
                 class="rounded-md bg-gray-600 hover:bg-gray-500 px-4 py-4"
@@ -790,7 +790,7 @@
             </div>
 
             <div
-              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6"
+              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-6"
             >
               <article
                 class="rounded-md bg-gray-600 hover:bg-gray-500 px-4 py-4"
@@ -892,20 +892,20 @@
     </div>
 
     <footer
-      class="h-24 w-full absolute bottom-0 left-0 bg-gradient-to-br from-indigo-800 to-pink-500 text-white px-4 py-2"
+      class="h-32 md:h-24 w-full absolute bottom-0 left-0 bg-gradient-to-br from-indigo-800 to-pink-500 text-white px-4 py-2"
     >
       <h3 class="tracking-wider uppercase font-semibold text-sm">
         Preview of Spotify
       </h3>
 
-      <div class="flex items-center justify-between">
-        <p class="font-semibold w-3/5">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <p class="font-semibold w-full lg:w-3/5">
           Sign up to get unlimited songs and podcasts with occasional ads. No
           credit card needed
         </p>
-        <div class="w-2/5 text-right">
+        <div class="mt-2 lg:mt-0 w-full lg:w-2/5 text-center md:text-right">
           <button
-            class="w-52 font-semibold rounded-full bg-white px-6 py-2 text-blue-500 uppercase hover:scale-105 mr-8"
+            class="w-52 font-semibold rounded-full bg-white px-6 py-2 text-blue-500 uppercase hover:scale-105 md:mr-8"
           >
             Sign Up Free
           </button>
